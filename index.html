@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Documentation</title>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #333;
+    line-height: 1.7;
+}
+
+#navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 260px;
+    height: 100vh;
+    background: #172554;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+#navbar header {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#navbar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    border-bottom: 1px solid #ffffff33;
+}
+
+#navbar a:hover {
+    background: #2563eb;
+}
+
+#main-doc {
+    margin-left: 280px;
+    padding: 30px;
+}
+
+.main-section {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px #0001;
+}
+
+.main-section header {
+    font-size: 25px;
+    color: #172554;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 12px;
+}
+
+code {
+    display: block;
+    background: #e8eef8;
+    padding: 12px;
+    margin: 12px 0;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+ul {
+    padding-left: 25px;
+}
+
+@media (max-width: 600px) {
+    #navbar {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    #main-doc {
+        margin-left: 0;
+        padding: 15px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+    <nav id="navbar">
+        <header>JavaScript Documentation</header>
+
+        <a href="#Introduction">Introduction</a>
+        <a href="#Variables">Variables</a>
+        <a href="#Data_Types">Data Types</a>
+        <a href="#Functions">Functions</a>
+        <a href="#Loops">Loops</a>
+    </nav>
+
+    <main id="main-doc">
+
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <p>JavaScript is a programming language used to make websites interactive.</p>
+            <p>It works with HTML and CSS to create dynamic web pages.</p>
+            <code>console.log("Hello World");</code>
+        </section>
+
+        <section class="main-section" id="Variables">
+            <header>Variables</header>
+            <p>Variables are used to store data.</p>
+            <p>JavaScript has three ways to declare variables.</p>
+            <code>let name = "Jaya";</code>
+            <code>const age = 25;</code>
+            <ul>
+                <li>var</li>
+                <li>let</li>
+                <li>const</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Data_Types">
+            <header>Data Types</header>
+            <p>Data types define the type of value stored in a variable.</p>
+            <p>JavaScript has different data types.</p>
+            <code>let number = 10;</code>
+            <code>let text = "Hello";</code>
+            <ul>
+                <li>String</li>
+                <li>Number</li>
+                <li>Boolean</li>
+                <li>Undefined</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Functions">
+            <header>Functions</header>
+            <p>Functions are reusable blocks of code.</p>
+            <p>They perform specific tasks.</p>
+            <code>function greet() { alert("Hello"); }</code>
+        </section>
+
+        <section class="main-section" id="Loops">
+            <header>Loops</header>
+            <p>Loops are used to repeat a block of code.</p>
+            <p>JavaScript supports different types of loops.</p>
+            <code>for(let i = 0; i < 5; i++) { console.log(i); }</code>
+            <ul>
+                <li>For Loop</li>
+                <li>While Loop</li>
+                <li>Do While Loop</li>
+            </ul>
+        </section>
+
+    </main>
+
+</body>
+</html>
